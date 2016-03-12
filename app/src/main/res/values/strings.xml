@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Wisielec</string>
+    <string-array name="passwords">
+        <item>kwas acetylosalicylowy</item>
+        <item>ala ma kota</item>
+        <item>antysemityzm</item>
+        <item>Prestidigitator</item>
+        <item>Personifikacja</item>
+        <item>Onomatopeja</item>
+        <item>Miedzykontynentalny</item>
+        <item>rozentuzjazmowany</item>
+        <item>wyidealizowany</item>
+        <item>tyranozaurus rex</item>
+        <item>Wyindywidualizowany</item>
+        <item>zwierzchnictwo</item>
+        <item>antykoncepcja</item>
+        <item>kolorowanka</item>
+        <item>lumpenproletariat</item>
+        <item>luminescencja</item>
+        <item>magnetoelektryczny</item>
+        <item>malkontenctwo</item>
+        <item>primaaprilisowy</item>
+        <item>anatomopatologiczny</item>
+        <item>deoksyrybonukleinowy</item>
+        <item>Krztusiec</item>
+        <item>klaustrofobia</item>
+        <item>akupresura</item>
+        <item>kalendarium</item>
+        <item>korek</item>
+        <item>lumpeks</item>
+        <item>encyklopedycznie</item>
+        <item>osiedle</item>
+        <item>osiedla</item>
+        <item>smycz</item>
+        <item>NAWIGACJA</item>
+        <item>Arachnofobia </item>
+        <item>rekonwalescencja</item>
+        <item>Konterfekt</item>
+        <item>demokratycznie</item>
+    </string-array>
+</resources>

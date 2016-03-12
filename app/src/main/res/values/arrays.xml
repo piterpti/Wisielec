@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="images">
+        <item>@drawable/s0</item>
+        <item>@drawable/s1</item>
+        <item>@drawable/s2</item>
+        <item>@drawable/s3</item>
+        <item>@drawable/s4</item>
+        <item>@drawable/s5</item>
+        <item>@drawable/s6</item>
+        <item>@drawable/s7</item>
+        <item>@drawable/s8</item>
+        <item>@drawable/s9</item>
+    </string-array>
+</resources>
