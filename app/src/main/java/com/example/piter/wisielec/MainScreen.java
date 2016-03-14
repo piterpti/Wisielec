@@ -2,6 +2,7 @@ package com.example.piter.wisielec;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.graphics.Color;
@@ -54,7 +55,26 @@ public class MainScreen extends Activity {
         setContentView(R.layout.activity_main_screen);
         baseContext = getApplicationContext();
         images = getResources().obtainTypedArray(R.array.images);
-        passwords = getResources().getStringArray(R.array.passwords);
+
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(chooseCategory.CATEGORY);
+
+        switch (message) {
+            case "Sport":
+                passwords = getResources().getStringArray(R.array.passwords_sport);
+                break;
+            case "Biologia/Chemia":
+                passwords = getResources().getStringArray(R.array.passwords_biochem);
+                break;
+            case "Filmy":
+                passwords = getResources().getStringArray(R.array.passwords_film);
+                break;
+            case "Państwa/Miasta":
+                passwords = getResources().getStringArray(R.array.passwords_panstwa_miasta);
+                break;
+        }
+
+
         thisScreen = this;
 
         lettersLayout = (LinearLayout) findViewById(R.id.letters_linearLayout);
@@ -66,10 +86,10 @@ public class MainScreen extends Activity {
         fadeInAnimation = AnimationUtils.loadAnimation(baseContext, R.anim.fadein);
         fadeInAnimation.setFillAfter(true);
 
-        winToast = Toast.makeText(this, "Zwycistwo!", Toast.LENGTH_LONG);
+        winToast = Toast.makeText(this, "Zwycięstwo!", Toast.LENGTH_LONG);
         winToast.setGravity(Gravity.TOP, 0, 40);
 
-        loseToast = Toast.makeText(this, "Porazka!", Toast.LENGTH_LONG);
+        loseToast = Toast.makeText(this, "Porażka!", Toast.LENGTH_LONG);
         loseToast.setGravity(Gravity.TOP, 0, 40);
 
         final Button retry_bt = (Button) findViewById(R.id.retry_bt);
@@ -94,12 +114,16 @@ public class MainScreen extends Activity {
     private void createLetters() {
         lettersLayout.removeAllViews();
         int count = 0;
-        int verticalLayouts = letters.length / 5;
+        int allLetters = 0;
+        int verticalLayouts = letters.length / 4;
+        verticalLayouts++;
         for (int i = 0; i < verticalLayouts; i++) {
             LinearLayout layoutHorizontal = new LinearLayout(this);
             layoutHorizontal.setOrientation(LinearLayout.HORIZONTAL);
-            for (int z = 0; z < 5; z++) {
-                layoutHorizontal.addView(new LetterButton(layoutHorizontal.getContext(), String.valueOf(letters[count++])));
+            for (int z = 0; z < 4; z++) {
+                if(allLetters < letters.length)
+                    layoutHorizontal.addView(new LetterButton(layoutHorizontal.getContext(), String.valueOf(letters[count++])));
+                allLetters++;
             }
             lettersLayout.addView(layoutHorizontal);
         }
@@ -109,7 +133,7 @@ public class MainScreen extends Activity {
         encoded_password = "";
         for (int i = 0; i < password.length(); i++) {
             if (password.charAt(i) != ' ' && password.charAt(i) != '!') {
-                encoded_password += "_";
+                encoded_password += "-";
             } else if (password.charAt(i) == '!') {
                 encoded_password += "!";
             } else {
@@ -169,10 +193,10 @@ public class MainScreen extends Activity {
         GAME_PLAYING = false;
         disable(lettersLayout);
         if (status) {
-            end_tv.setText("Odgadnieto haslo! Pomylek: " + TRY_COUNT);
+            end_tv.setText("Odgadnieto hasło! Pomyłek: " + TRY_COUNT);
             end_tv.setTextColor(Color.GREEN);
         } else {
-            end_tv.setText("Przegrana, haslo: \"" + password + "\"");
+            end_tv.setText("Przegrana, hasło: \"" + password + "\"");
             end_tv.setTextColor(Color.RED);
         }
         endLayout.setVisibility(View.VISIBLE);

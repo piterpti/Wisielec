@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="1"
-                android:layout_marginTop="-24dp">
+                android:layout_marginTop="16dp">
 
                 <ImageView
                     android:id="@+id/wisi_iv"
@@ -71,7 +71,7 @@
                 <LinearLayout
                     android:id="@+id/letters_linearLayout"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:orientation="vertical"
                     android:gravity="center"
@@ -85,7 +85,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:visibility="gone">
+            android:visibility="gone"
+            android:layout_marginTop="24dp">
             <TextView
                 android:id="@+id/end_tv"
                 android:layout_width="match_parent"

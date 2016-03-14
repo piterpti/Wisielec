@@ -1,41 +1,126 @@
 <resources>
     <string name="app_name">Wisielec</string>
-    <string-array name="passwords">
+    <string-array name="categories">
+        <item>Sport</item>
+        <item>Biologia/Chemia</item>
+        <item>Filmy</item>
+        <item>Państwa/Miasta</item>
+    </string-array>
+
+    <string-array name="passwords_sport">
+        <item>szczypiornista</item>
+        <item>trener piłkarski</item>
+        <item>kapitan drużyny</item>
+        <item>libero</item>
+        <item>murawa</item>
+        <item>stadion narodowy</item>
+        <item>spalony</item>
+        <item>pułapka ofsajdowa</item>
+        <item>bramka</item>
+        <item>piłkarz</item>
+        <item>rzut karny</item>
+        <item>pseudokibic</item>
+        <item>rywalizacja</item>
+        <item>złota bramka</item>
+        <item>puchar świata</item>
+        <item>liga mistrzów</item>
+        <item>pierwsza tercja</item>
+    </string-array>
+    <string-array name="passwords_biochem">
         <item>kwas acetylosalicylowy</item>
-        <item>ala ma kota</item>
-        <item>antysemityzm</item>
-        <item>Prestidigitator</item>
-        <item>Personifikacja</item>
-        <item>Onomatopeja</item>
-        <item>Miedzykontynentalny</item>
-        <item>rozentuzjazmowany</item>
-        <item>wyidealizowany</item>
-        <item>tyranozaurus rex</item>
-        <item>Wyindywidualizowany</item>
-        <item>zwierzchnictwo</item>
-        <item>antykoncepcja</item>
-        <item>kolorowanka</item>
-        <item>lumpenproletariat</item>
-        <item>luminescencja</item>
-        <item>magnetoelektryczny</item>
-        <item>malkontenctwo</item>
-        <item>primaaprilisowy</item>
         <item>anatomopatologiczny</item>
         <item>deoksyrybonukleinowy</item>
-        <item>Krztusiec</item>
-        <item>klaustrofobia</item>
         <item>akupresura</item>
-        <item>kalendarium</item>
-        <item>korek</item>
-        <item>lumpeks</item>
-        <item>encyklopedycznie</item>
-        <item>osiedle</item>
-        <item>osiedla</item>
-        <item>smycz</item>
-        <item>NAWIGACJA</item>
-        <item>Arachnofobia </item>
-        <item>rekonwalescencja</item>
-        <item>Konterfekt</item>
-        <item>demokratycznie</item>
+        <item>kędzierzawy chrząszcz</item>
+        <item>kwas rybonuleinowy</item>
+        <item>etanol</item>
+        <item>metanol</item>
+        <item>propan</item>
+        <item>butan</item>
+        <item>tablica mendelejewa</item>
+        <item>botanika</item>
+        <item>rozmnażanie</item>
+        <item>pączkowanie</item>
+        <item>zapładnianie</item>
+        <item>zapylanie</item>
+        <item>cytologia</item>
+        <item>tomografia</item>
+        <item>hemoglobina</item>
+        <item>masz raka</item>
+        <item>żyrafa</item>
+        <item>stłubia</item>
+        <item>pachwina</item>
+        <item>szczękoczułki</item>
+        <item>aparat gębowy</item>
+        <item>mitochondrium</item>
+        <item>sotmatologia</item>
+        <item>stonoga</item>
+        <item>glukoza</item>
+        <item>endoszkielet</item>
+    </string-array>
+    <string-array name="passwords_film">
+        <item>karbala</item>
+        <item>mad max</item>
+        <item>incepcja</item>
+        <item>seksmisja</item>
+        <item>miś</item>
+        <item>zielona mila</item>
+        <item>ojciec chrzestny</item>
+        <item>lot nad kukułczym gniazdem</item>
+        <item>piła</item>
+        <item>ring</item>
+        <item>ludzka stonoga</item>
+        <item>mordercza opona</item>
+        <item>requiem dla snu</item>
+        <item>trainspotting</item>
+        <item>wzgórza mają oczy</item>
+        <item>szósty zmysł</item>
+        <item>killer</item>
+        <item>chłopaki nie płaczą</item>
+        <item>sami swoi</item>
+        <item>shrek</item>
+        <item>madagaskar</item>
+        <item>pingwiny z madagaskaru</item>
+        <item>adrenalina</item>
+        <item>przekręt</item>
+        <item>łowca androidów</item>
+        <item>gwiezdne wojny</item>
+        <item>władca pierścieni</item>
+        <item>jestem legendą</item>
+        <item>kolor purpury</item>
+        <item>ostatni mochikanin</item>
+        <item>szkoła uczuć</item>
+        <item>hooligans</item>
+        <item>czterej pancerni i pies</item>
+    </string-array>
+    <string-array name="passwords_panstwa_miasta">
+        <item>argentyna</item>
+        <item>sir dźajawardanapura kotte</item>
+        <item>brazylia</item>
+        <item>szwajcaria</item>
+        <item>polska</item>
+        <item>bandar seri begawan</item>
+        <item>boliwia</item>
+        <item>sofia</item>
+        <item>burkina faso</item>
+        <item>bułgaria</item>
+        <item>warszawa</item>
+        <item>kraków</item>
+        <item>skierniewice</item>
+        <item>kambodża</item>
+        <item>mogadiszu</item>
+        <item>somalia</item>
+        <item>uzbekistan</item>
+        <item>kazahstan</item>
+        <item>wybrzeże kości słoniowej</item>
+        <item>afganistan</item>
+        <item>arabia saudyjska</item>
+        <item>rumunia</item>
+        <item>albania</item>
+        <item>stany zjednoczone</item>
+        <item>demokratyczna republika konga</item>
+        <item>gwinea równikowa</item>
+        <item></item>
+        <item></item>
     </string-array>
 </resources>
